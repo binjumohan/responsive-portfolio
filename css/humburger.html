@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Very Simple Hamburger Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    /* Hide checkbox */
+    #menu-toggle {
+      display: none;
+    }
+
+    /* Hamburger button */
+    .menu-btn {
+      display: block;
+      width: 30px;
+      cursor: pointer;
+      margin: 15px;
+    }
+    .menu-btn span {
+      display: block;
+      height: 3px;
+      margin: 5px 0;
+      background: #333;
+    }
+
+    /* Menu hidden by default */
+    nav {
+      display: none;
+      background: #f4f4f4;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      padding: 8px 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Show menu when checked */
+    #menu-toggle:checked ~ nav {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Toggle -->
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <!-- Menu -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

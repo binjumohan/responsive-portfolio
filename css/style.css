@@ -1,0 +1,175 @@
+/* Setting default values */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+   /* Hide checkbox */
+    #menu-toggle {
+      display: none;
+    }
+    .hamburger{
+      display: none;
+    }
+}
+ /* Hamburger button */
+    .menu-btn {
+      display: block;
+      width: 30px;
+      cursor: pointer;
+      margin: 15px;
+    }
+
+    .menu-btn span {
+      display: block;
+      height: 3px;
+      margin: 5px 0;
+      background: #333;
+    }
+/* Menu hidden by default */
+    .small-nav {
+      display: none;
+      background: #f4f4f4;
+      padding: 10px;
+    }
+
+
+     .small-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .small-nav ul li {
+      padding: 8px 0;
+    }
+
+    .small-nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Show menu when checked */
+    #menu-toggle:checked ~ .small-nav {
+      display: block;
+    }
+
+
+body {
+  background-color: rgb(248, 245, 245);
+  font-family: "Poppins", sans-serif;
+  border: 2px solid black;
+  padding: 5px;
+  
+}
+
+nav {
+
+
+  text-align: right;
+  font-size: larger;
+  text-decoration: none;
+
+
+}
+h1{
+  padding-left: 10px;
+}
+.communication{
+    padding-left: 10px;
+}
+
+h4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+img {
+  border-radius: 50%;
+  padding-top: 10px;
+  padding-left: 10px;
+  transition: transform 0.5s ease;
+}
+img:hover{
+  /* enlarges the image slightly when hovered over. */
+ transform: scale(1.1);
+}
+
+nav a {
+  color: black;
+  padding-right: 100px;
+  text-decoration: none;
+
+}
+
+nav a:hover {
+  color: rgb(138 138 210);
+  
+
+}
+
+p {
+  padding-left: 30px;
+  font-size: large;
+}
+
+li {
+  font-size: large;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+button {
+  background-color:rgb(138 138 210);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 300px;
+  border-radius: 30px;
+}
+button:hover {
+  background-color:rgb(138 138 210);
+  color: white;
+}
+section h2 {
+  margin-top: 20px;
+  background-color: rgb(138 138 210);
+   border: 1px solid ;
+    box-shadow: 5px 5px;
+    margin-bottom: 20px
+}
+article {
+  padding-top: 20px;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+input {
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+
+}
+
+
+textarea {
+  width: 300px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  
+
+}
+.contact{
+text-align: center;
+background-color: rgb(191, 191, 233);
+}
